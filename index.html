@@ -6,114 +6,203 @@
     <title>Phuc Tran Ngoc | Senior Data Engineer</title>
     <meta
       name="description"
-      content="Portfolio-style CV website for Phuc Tran Ngoc, Senior Data Engineer and Technical Lead."
+      content="Portfolio-style CV website for Phuc Tran Ngoc, Senior Data Engineer, Technical Lead, and Solution Architect."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Oswald:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-grid"></div>
+
     <div class="page-shell">
       <aside class="sidebar">
         <div class="identity-card">
-          <img src="assets/avatar.png" alt="Portrait of Phuc Tran Ngoc" class="avatar" />
+          <div class="avatar-wrap">
+            <img src="assets/avatar.png" alt="Portrait of Phuc Tran Ngoc" class="avatar" />
+          </div>
+          <p class="mono overline">Data / Platform / Architecture</p>
           <h1>Phuc Tran Ngoc</h1>
-          <p class="role">Senior Data Engineer</p>
-          <p class="meta-line">Hanoi, Vietnam</p>
-          <p class="meta-line">(+84) 368609837</p>
-          <p class="meta-line">ptrann310@gmail.com</p>
+          <p class="role">Senior Data Engineer · Technical Lead</p>
+          <p class="brand-statement">
+            Building scalable data platforms, analytics workflows, and observability systems
+            across cloud and on-premise environments.
+          </p>
         </div>
+
+        <section class="side-section contact-panel">
+          <h2>Contact</h2>
+          <div class="contact-list">
+            <a href="https://maps.google.com/?q=Hanoi,Vietnam" target="_blank" rel="noreferrer">Hanoi, Vietnam</a>
+            <a href="tel:+84368609837">(+84) 368609837</a>
+            <a href="mailto:ptrann310@gmail.com">ptrann310@gmail.com</a>
+          </div>
+          <div class="action-row">
+            <a class="primary-button" href="mailto:ptrann310@gmail.com">Email me</a>
+            <a class="secondary-button" href="#experience">View experience</a>
+          </div>
+        </section>
 
         <section class="side-section">
           <h2>Links</h2>
           <ul class="link-list">
-            <li><a href="#" aria-label="LinkedIn link placeholder">LinkedIn</a></li>
-            <li><a href="#" aria-label="GitHub link placeholder">GitHub</a></li>
+            <li><a href="#" aria-label="LinkedIn link placeholder">LinkedIn ↗</a></li>
+            <li><a href="#" aria-label="GitHub link placeholder">GitHub ↗</a></li>
           </ul>
         </section>
 
         <section class="side-section">
-          <h2>Core Skills</h2>
-          <ul class="tag-list">
-            <li>Cloud (GCP, Azure, AWS)</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>Scala</li>
-            <li>SQL</li>
-            <li>Databricks</li>
-            <li>Elastic Stack</li>
-            <li>ETL / ELT</li>
-            <li>Data Analysis</li>
-            <li>Agile (Scrum / Kanban)</li>
-            <li>Leadership</li>
-            <li>Problem Solving</li>
-          </ul>
+          <h2>Core Stack</h2>
+          <div class="skill-group">
+            <span class="group-label">Cloud</span>
+            <ul class="tag-list">
+              <li>GCP</li>
+              <li>Azure</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <span class="group-label">Languages</span>
+            <ul class="tag-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>Scala</li>
+              <li>SQL</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <span class="group-label">Data / Platform</span>
+            <ul class="tag-list">
+              <li>Databricks</li>
+              <li>BigQuery</li>
+              <li>Elastic Stack</li>
+              <li>Airflow</li>
+              <li>ETL / ELT</li>
+              <li>Power BI</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <span class="group-label">Ways of Working</span>
+            <ul class="tag-list">
+              <li>System Design</li>
+              <li>Leadership</li>
+              <li>Pre-sales</li>
+              <li>Agile</li>
+            </ul>
+          </div>
         </section>
 
         <section class="side-section">
           <h2>Languages</h2>
           <div class="language-item">
-            <span>Vietnamese</span>
+            <div class="language-row">
+              <span>Vietnamese</span>
+              <strong>Native</strong>
+            </div>
             <div class="bar full"></div>
           </div>
           <div class="language-item">
-            <span>English</span>
+            <div class="language-row">
+              <span>English</span>
+              <strong>Professional</strong>
+            </div>
             <div class="bar mid"></div>
           </div>
         </section>
 
         <section class="side-section">
-          <h2>Certificates</h2>
+          <h2>Certifications</h2>
           <ul class="plain-list compact">
             <li>Databricks Certified Data Engineer Professional</li>
             <li>Neo4j Certified Professional</li>
             <li>AWS Certified Cloud Practitioner</li>
             <li>Astronomer Certification for Apache Airflow Fundamentals</li>
             <li>SQL (Advanced) – HackerRank</li>
-            <li>TOEIC 700</li>
-          </ul>
-        </section>
-
-        <section class="side-section">
-          <h2>Hobbies</h2>
-          <ul class="plain-list compact">
-            <li>Data Science</li>
-            <li>Computer Science</li>
-            <li>Language</li>
-            <li>International Culture</li>
-            <li>Remote / Hybrid Working</li>
+            <li>TOEIC – 700</li>
           </ul>
         </section>
       </aside>
 
       <main class="content">
+        <nav class="top-nav">
+          <a href="#profile">Profile</a>
+          <a href="#impact">Impact</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#certs">Certs</a>
+        </nav>
+
         <header class="hero">
-          <div>
-            <p class="eyebrow">Big Data Engineer • Technical Lead • Solution Architect</p>
-            <h2>Building scalable data platforms and observability systems across cloud and on-premise environments.</h2>
+          <div class="hero-copy">
+            <p class="eyebrow">Big Data Engineer · Technical Lead · Solution Architect</p>
+            <h2>
+              I design reliable data platforms and observability systems that scale,
+              perform, and deliver measurable business value.
+            </h2>
+            <p class="hero-summary">
+              Extensive experience delivering enterprise-grade analytics, ETL / ELT,
+              and large-scale log ingestion systems across GCP, Azure, AWS, and on-premise
+              environments.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="mailto:ptrann310@gmail.com">Let’s talk</a>
+              <a class="secondary-button" href="#experience">Explore timeline</a>
+            </div>
           </div>
-          <a class="ghost-button" href="mailto:ptrann310@gmail.com">Contact</a>
+
+          <div class="hero-panel">
+            <p class="mono hero-panel-title">Focus areas</p>
+            <ul class="focus-list">
+              <li>Scalable data platforms</li>
+              <li>Real-time log ingestion</li>
+              <li>Observability architecture</li>
+              <li>Analytics engineering</li>
+              <li>Technical leadership</li>
+            </ul>
+          </div>
         </header>
 
-        <section class="content-section">
+        <section class="metric-grid" id="impact">
+          <article class="metric-card">
+            <span class="metric-value">7+</span>
+            <span class="metric-label">Years in software & data engineering</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">1TB/day</span>
+            <span class="metric-label">Real-time log volume designed for production systems</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">Multi-cloud</span>
+            <span class="metric-label">Proven delivery across GCP, Azure, AWS, and on-prem</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">Lead+</span>
+            <span class="metric-label">Delivery, architecture, pre-sales, and cross-functional leadership</span>
+          </article>
+        </section>
+
+        <section class="content-section" id="profile">
           <div class="section-title-wrap">
             <span class="section-index">01</span>
             <h3>Profile</h3>
           </div>
-          <div class="card">
+          <div class="card spotlight-card">
             <p>
-              Senior Data Engineer and Technical Lead with nearly 7 years building scalable,
+              Senior Data Engineer and Technical Lead with strong experience building scalable,
               high-performance data platforms on both cloud and on-premise platforms.
               Designed real-time ingestion and analytics systems (Elastic / Databricks)
               processing up to 1TB/day with low latency, and delivered enterprise ETL / ELT
               and BigQuery solutions that improved reliability, throughput, and cost-efficiency.
             </p>
             <p>
-              Hands-on with Databricks, BigQuery, and observability stacks; experienced leading
+              Experienced with Databricks, BigQuery, and observability stacks; experienced leading
               cross-functional teams, defining system architecture, and turning complex data
               into actionable insights that drive measurable business outcomes.
             </p>
@@ -123,12 +212,48 @@
         <section class="content-section">
           <div class="section-title-wrap">
             <span class="section-index">02</span>
-            <h3>Experience</h3>
+            <h3>Strengths</h3>
+          </div>
+          <div class="strength-grid">
+            <article class="card strength-card">
+              <p class="mono">01 / Architecture</p>
+              <h4>Data platforms with long-term scale in mind</h4>
+              <p>
+                From batch analytics to near real-time observability, I design systems with
+                reliability, fault tolerance, and maintainability as first-class priorities.
+              </p>
+            </article>
+            <article class="card strength-card">
+              <p class="mono">02 / Execution</p>
+              <h4>End-to-end delivery across the full pipeline</h4>
+              <p>
+                I work comfortably from ingestion and modeling to orchestration, dashboarding,
+                monitoring, and production hardening.
+              </p>
+            </article>
+            <article class="card strength-card">
+              <p class="mono">03 / Leadership</p>
+              <h4>Strong bridge between business and engineering</h4>
+              <p>
+                I translate business needs into technical decisions, lead teams through
+                implementation, and support proposal / solutioning conversations with clients.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section" id="experience">
+          <div class="section-title-wrap">
+            <span class="section-index">03</span>
+            <h3>Experience Timeline</h3>
           </div>
           <div class="timeline">
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Senior Data Engineer <span>@ CMC Global, Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Current role</p>
+                  <h4>Senior Data Engineer <span>@ CMC Global, Hanoi</span></h4>
+                </div>
                 <p>Feb 2026 – Present</p>
               </div>
               <ul>
@@ -142,7 +267,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Technical Lead / Solution Architect <span>@ CMC Global, Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Architecture / delivery</p>
+                  <h4>Technical Lead / Solution Architect <span>@ CMC Global, Hanoi</span></h4>
+                </div>
                 <p>Jul 2025 – Mar 2026</p>
               </div>
               <ul>
@@ -159,7 +287,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Data Engineering Team Lead <span>@ CMC Global, Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Team lead</p>
+                  <h4>Data Engineering Team Lead <span>@ CMC Global, Hanoi</span></h4>
+                </div>
                 <p>Mar 2025 – Jul 2025</p>
               </div>
               <ul>
@@ -173,7 +304,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Technical Lead (PoC / Solution Design) <span>@ CMC Global, Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Pre-sales / solutioning</p>
+                  <h4>Technical Lead (PoC / Solution Design) <span>@ CMC Global, Hanoi</span></h4>
+                </div>
                 <p>Jul 2024 – Dec 2024</p>
               </div>
               <ul>
@@ -183,16 +317,22 @@
                 <li>Conducted technical presentations, solution demonstrations, and architecture walkthroughs to convince stakeholders and secure project buy-in.</li>
                 <li>Played a key role in technical proposal writing, estimation, and solution positioning, contributing directly to business acquisition.</li>
                 <li>Led and coordinated the engineering team, ensuring alignment between business requirements and technical implementation.</li>
-                <li>Gained hands-on experience in client communication, negotiation, and cross-functional collaboration in a pre-sales / solutioning context.</li>
+                <li>Built strong experience in client communication, negotiation, and cross-functional collaboration in a pre-sales / solutioning context.</li>
               </ul>
             </article>
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Data Engineer <span>@ NTT Data VDS., Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Analytics engineering</p>
+                  <h4>Data Engineer <span>@ NTT Data VDS., Hanoi</span></h4>
+                </div>
                 <p>Jan 2024 – Jul 2024</p>
               </div>
-              <p>Worked in a Kanban team, mainly focused on creation of automated workflows for fleet measurement analysis. Main responsibilities included:</p>
+              <p>
+                Worked in a Kanban team, mainly focused on creation of automated workflows for
+                fleet measurement analysis. Main responsibilities included:
+              </p>
               <ul>
                 <li>Seamlessly collaborated within a Kanban team, coordinating with 2 Vietnamese and 4 European colleagues to ensure project alignment and success.</li>
                 <li>Harnessed Azure platform and proprietary tools to build robust data pipelines, supporting ingestion and processing of petabytes of raw data from data lakes.</li>
@@ -203,7 +343,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Software Engineering Team Lead <span>@ NTT Data VDS., Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Software lead</p>
+                  <h4>Software Engineering Team Lead <span>@ NTT Data VDS., Hanoi</span></h4>
+                </div>
                 <p>Jun 2023 – Dec 2023</p>
               </div>
               <ul>
@@ -217,7 +360,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Data Engineering Team Lead <span>@ NTT Data VDS., Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Data team growth</p>
+                  <h4>Data Engineering Team Lead <span>@ NTT Data VDS., Hanoi</span></h4>
+                </div>
                 <p>Oct 2021 – May 2023</p>
               </div>
               <ul>
@@ -233,7 +379,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Software Engineer <span>@ NTT Data VDS., Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Early platform engineering</p>
+                  <h4>Software Engineer <span>@ NTT Data VDS., Hanoi</span></h4>
+                </div>
                 <p>May 2021 – Oct 2021</p>
               </div>
               <ul>
@@ -246,7 +395,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Intern Software Engineer <span>@ VTI Vietnam, Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Internship</p>
+                  <h4>Intern Software Engineer <span>@ VTI Vietnam, Hanoi</span></h4>
+                </div>
                 <p>Jul 2020 – Nov 2020</p>
               </div>
               <ul>
@@ -260,7 +412,10 @@
 
             <article class="timeline-item">
               <div class="timeline-head">
-                <h4>Intern Software Engineer <span>@ SODO Asia, Hanoi</span></h4>
+                <div>
+                  <p class="mono timeline-kicker">Starting point</p>
+                  <h4>Intern Software Engineer <span>@ SODO Asia, Hanoi</span></h4>
+                </div>
                 <p>Feb 2019 – Oct 2019</p>
               </div>
               <ul>
@@ -275,26 +430,27 @@
           </div>
         </section>
 
-        <section class="content-section grid-two">
+        <section class="content-section grid-two" id="education">
           <div>
             <div class="section-title-wrap">
-              <span class="section-index">03</span>
+              <span class="section-index">04</span>
               <h3>Education</h3>
             </div>
             <div class="card">
+              <p class="mono">2016 → 2021</p>
               <h4>Engineer, Posts and Telecommunications Institute of Technology</h4>
               <p class="muted">Oct 2016 – Sept 2021</p>
             </div>
           </div>
-          <div>
+          <div id="certs">
             <div class="section-title-wrap">
-              <span class="section-index">04</span>
+              <span class="section-index">05</span>
               <h3>Highlights</h3>
             </div>
             <div class="card">
               <ul>
                 <li>Designed data and observability systems processing up to 1TB/day.</li>
-                <li>Worked across GCP, Azure, AWS, and on-premise platforms.</li>
+                <li>Worked across GCP, Azure, AWS, and on-premise environments.</li>
                 <li>Led cross-functional engineering teams in both delivery and pre-sales contexts.</li>
                 <li>Strong background in Databricks, BigQuery, Elastic Stack, and distributed ETL design.</li>
               </ul>
@@ -303,5 +459,6 @@
         </section>
       </main>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
