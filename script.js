@@ -1,7 +1,7 @@
 (function () {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width: 760px)').matches;
 
-  // top progress
   let progress = document.querySelector('.top-progress');
   if (!progress) {
     progress = document.createElement('div');
@@ -19,33 +19,30 @@
   window.addEventListener('scroll', updateProgress, { passive: true });
   window.addEventListener('resize', updateProgress);
 
-  // choose elements to reveal without changing layout/styling
-  const selectors = [
-    'section',
-    '.section',
-    '.card',
-    '.panel',
+  const revealSelectors = [
+    '.hero-copy',
+    '.hero-panel',
+    '.metric-card',
+    '.spotlight-card',
+    '.strength-card',
     '.timeline-item',
-    '.experience-item',
-    '.project-item',
-    '.skill-item',
-    '.tag',
-    '.hero',
-    '.sidebar',
-    '.main',
-    '.content-block'
+    '.grid-two .card',
+    '.side-section',
+    '.identity-card'
   ];
 
-  const items = Array.from(document.querySelectorAll(selectors.join(',')))
+  const items = Array.from(document.querySelectorAll(revealSelectors.join(',')))
     .filter((el, idx, arr) => arr.indexOf(el) === idx);
 
   items.forEach((el, index) => {
     el.classList.add('reveal');
-    el.classList.add('hover-lift');
+    if (!el.classList.contains('timeline-item')) {
+      el.classList.add('hover-lift');
+    }
     el.classList.add(`reveal-delay-${index % 3 + 1}`);
   });
 
-  if (reduceMotion) {
+  if (reduceMotion || isMobile || !('IntersectionObserver' in window)) {
     items.forEach(el => el.classList.add('is-visible'));
     return;
   }
@@ -57,7 +54,7 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0.03, rootMargin: '0px 0px -6% 0px' });
 
   items.forEach(el => observer.observe(el));
 })();

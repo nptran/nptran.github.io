@@ -808,3 +808,99 @@ html { scroll-behavior: smooth; }
     transition: none;
   }
 }
+
+
+/* mobile visibility fix */
+@media (max-width: 760px) {
+  .content-section.reveal,
+  .metric-grid.reveal,
+  .grid-two.reveal,
+  .hero.reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    margin: -4px -4px 18px;
+    padding: 12px 4px 14px;
+    background: linear-gradient(180deg, rgba(7,17,31,0.98), rgba(7,17,31,0.78));
+    backdrop-filter: blur(10px);
+  }
+
+  .top-nav a {
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+
+  .timeline-item ul {
+    padding-left: 1rem;
+  }
+}
+
+
+
+/* Tech icon chips */
+.tag-chip,
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  object-fit: cover;
+  flex: 0 0 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 16px;
+}
+
+.tech-pill {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #dbe7fb;
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
+.tag-chip .tech-icon,
+.tech-pill .tech-icon {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.tag-chip:hover .tech-icon,
+.tech-pill:hover .tech-icon {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 700px) {
+  .tech-row {
+    gap: 8px;
+    margin: 12px 0 14px;
+  }
+
+  .tech-pill {
+    font-size: 0.82rem;
+    padding: 7px 10px;
+  }
+
+  .tech-icon {
+    width: 14px;
+    height: 14px;
+    flex-basis: 14px;
+  }
+}
